@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-app.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-auth.min.js"></script>
+    <!-- <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-app.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-auth.min.js"></script> -->
+    
+</head>
+<body>
+    
+
+<div id="loginScreen">
+<button id="login" class="login">  <i class="fa fa-google-plus" ></i></button>
+</div>
+
+<section id="level1">
+    <div id="dashboard">
+        <div id="userDetails"></div>
+        <button id="logOut">LogOut</button>
+    </div>
+    <div class="wrapper">
+        <p>your life is: <span id="life">5</span></p>
+        <p>your score is : <span id="score">0</span></p>
+        <h1>Pop the Red balloons by moving</br>your mouse over them</h1>
+        <button id="start" onclick="start()">start</button>
+        <button id="stop" onclick="stop()">stop</button>
+        <div id="balloon-gallery">
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+            <div class="balloon_red"></div>
+        </div>
+
+    </div>
+</section>
+    <script src="app.js"></script>
+</body>
+</html>
